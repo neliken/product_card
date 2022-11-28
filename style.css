@@ -1,0 +1,70 @@
+@import url('https://fonts.google.com/specimen/Montserrat');
+@import url('https://fonts.google.com/specimen/Fraunces');
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+ */
+:root {
+  --primary-color: hsl(30, 38%, 92%);
+  --secondary-color: hsl(158, 36%, 37%);
+  --text-color: hsl(228, 12%, 48%);
+  --font-1: 'Montserrat', sans-serif;
+  --font-2: 'Fraunces', sans-serif;
+}
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+
+* {
+  box-sizing: border-box;
+  place-items: center;
+  /* width: 100%; */
+}
+
+.body{
+  /* background-color: var(--primary-color); */
+  background-color: hsl(30, 38%, 92%);
+  margin: auto;
+  place-items: center;
+  display: grid;
+}
+
+div.card{
+  background-color: white;
+  flex-direction: column;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  /* height: 550px;
+  width: 350px;  */
+  position: relative;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card .image-wrapper {
+    height: 300px;
+    width: 150px; 
+}
+
+.title {
+  font-family: var(--font-2);
+}
+
+.description {
+  font-family: var(--font-1);
+}
+
+@media screen and (min-width: 768px) {
+  div.card {
+    flex-direction: row;
+    display: flex; 
+    position: relative;
+    border-color: black;
+  }
+  .card .image-wrapper {
+    height: 700px;
+    width: 350px; 
+}
+}
