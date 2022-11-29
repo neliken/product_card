@@ -1,5 +1,5 @@
-@import url('https://fonts.google.com/specimen/Montserrat');
-@import url('https://fonts.google.com/specimen/Fraunces');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
  */
 :root {
@@ -30,7 +30,7 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
-  height: 600px;
+  /* height: 550px; */
   width: 330px;
   position: relative;
   margin: auto;
@@ -38,7 +38,6 @@ body {
 }
 
 .card .image-wrapper {
-  /* background-image: url("./images/image-product-mobile.jpg");   */
   content: url("./images/image-product-mobile.jpg");
   overflow: hidden;
   border-top-left-radius: 20px;
@@ -47,10 +46,11 @@ body {
 }
 
 .card .info {
-  margin: auto;
-  padding: 15px;
+  display: grid;
+  padding: 20px;
   font-size: 14px;
-  
+  justify-content: space-around;
+  height: auto;
 }
 .card .info #type_product {
   color: var(--text-color);
@@ -62,14 +62,14 @@ body {
 .card .info .title {
   font-family: var(--font-2);
   font-weight: 700;
-  /* font-size: 25px; */
   font-size: 30px;
+  /* padding: 20px;
+  padding-left: 0px; */
 }
 
 .card .info .description {
   font-family: var(--font-1);
   font-weight: 400;
-
   color: var(--text-color);
 }
 
@@ -78,8 +78,8 @@ body {
   font-family: var(--font-2);
   font-size: 30px;
   display: inline-block;
-  margin: 15px;
-  margin-left: 0px;
+  /* margin: 15px;
+  margin-left: 0px; */
 }
 
 .card .info #old_price {
@@ -90,21 +90,18 @@ body {
 
 .card .info button {
   background-color: var(--secondary-color);
+  font-family: var(--font-1);
+  font-weight: 400;
   color: white;
-  display: block;
-  width: 100%;
-  /* margin: 5px; */
   padding: 10px;
   border-radius: 5px;
   border-style: none;
 }
 
-/* @media (max-width: 767px) {
-  .card .image-wrapper {
-    content: url("./images/image-product-mobile.jpg");
-    background-size: cover; 
-  }
-} */
+.card .info button span {
+  display: inline-block;
+  margin-right: 5px;
+}
 
 @media screen and (min-width: 768px) {
   .card {
@@ -115,6 +112,8 @@ body {
 
   .card .info {
     width: 100%;
+    padding: 30px;
+    /* margin: auto; */
   }
 
   .card .info .title {
