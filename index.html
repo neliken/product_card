@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
   
   <title>Frontend Mentor | Product preview card component</title>
 
@@ -14,10 +14,12 @@
 <body>
   <div class="card">
     <div class="image-wrapper">
-      <img src="./images/image-product-desktop.jpg" alt="">
+      <!-- <img src="./images/image-product-mobile.jpg" srcset="./images/image-product-desktop.jpg 768" alt="parfume"> -->
+      <!-- <source media="(min-width: 768px)" srcset="./images/image-product-desktop.jpg">
+      <source media="(max-width: 768px)" srcset="./images/image-product-mobile.jpg"> -->
     </div>
     <div class="info">
-      Preview
+      <span id="type_product">PERFUME</span>
 
       <div class="title">Gabrielle Essence Eau De Parfum</div>
     
@@ -26,8 +28,8 @@
         Perfumer-Creator for the House of CHANEL.
       </div>
     
-      <span>$149.99</span>
-      <span>$169.99</span>
+      <span id="new_price"> <b>$149.99</b> </span>
+      <span id="old_price">$169.99</span>
     
       <button>Add to Cart</button>
     </div>
