@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
- */
+
 :root {
   --primary-color: hsl(30, 38%, 92%);
   --secondary-color: hsl(158, 36%, 37%);
@@ -9,9 +8,6 @@
   --font-1: 'Montserrat', sans-serif;
   --font-2: 'Fraunces', sans-serif;
 }
-
-/* .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); } */
 
 * {
   box-sizing: border-box;
@@ -30,7 +26,6 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
-  /* height: 550px; */
   width: 330px;
   position: relative;
   margin: auto;
@@ -47,6 +42,7 @@ body {
 
 .card .info {
   display: grid;
+  grid-gap: 10px;
   padding: 20px;
   font-size: 14px;
   justify-content: space-around;
@@ -63,8 +59,6 @@ body {
   font-family: var(--font-2);
   font-weight: 700;
   font-size: 30px;
-  /* padding: 20px;
-  padding-left: 0px; */
 }
 
 .card .info .description {
@@ -78,8 +72,6 @@ body {
   font-family: var(--font-2);
   font-size: 30px;
   display: inline-block;
-  /* margin: 15px;
-  margin-left: 0px; */
 }
 
 .card .info #old_price {
@@ -100,7 +92,7 @@ body {
 
 .card .info button span {
   display: inline-block;
-  margin-right: 5px;
+  margin-right: px;
 }
 
 @media screen and (min-width: 768px) {
@@ -113,7 +105,6 @@ body {
   .card .info {
     width: 100%;
     padding: 30px;
-    /* margin: auto; */
   }
 
   .card .info .title {
